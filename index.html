@@ -1,0 +1,38 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+<input id="result"class="screen" type="text" placeholder="0" readonly>
+<div class="bottom">
+    <button onclick="displayContent('(')" class="op">(</button>
+    <button onclick="displayContent( ')')" class="op">)</button>
+    <button onclick="clearCalcScreen()" class="op">AC</button>
+    <button onclick="displayContent('/')"class="operator">/</button>
+    <button onclick="displayContent('7')"class="numbers">7</button>
+    <button onclick="displayContent('8')"class="numbers" >8</button>
+    <button onclick="displayContent('9')"class="numbers">9</button>
+    <button onclick="displayContent('*')"class="operator">*</button>
+    <button onclick="displayContent('4')"class="numbers">4</button>
+    <button onclick="displayContent('5')"class="numbers">5</button>
+    <button onclick="displayContent('6')"class="numbers">6</button>
+    <button onclick="displayContent('-')"class="operator">-</button>
+    <button onclick="displayContent('1')"class="numbers">1</button>
+    <button onclick="displayContent('2')"class="numbers">2</button>
+    <button onclick="displayContent('3')"class="numbers">3</button>
+    <button onclick="displayContent('+')"class="operator">+</button>
+    <button onclick="displayContent('0')"class="numbers">0</button>
+    <button onclick="displayContent('.')"class="numbers">.</button>
+    <button class="op">exp</button>
+    <button onclick="displayResult()" class="equal">=</button>
+    <button onclick="removeLastDigit()" id="del"class="op" >delete</button>
+
+</div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
